@@ -5,5 +5,5 @@ services:
 before_install:
   - docker build -t jatindocker4/docker-react -f Dockerfile.dev .
 
-scripts:
+script:
   - docker run jatindocker4/docker-react npm run test -- --coverage
