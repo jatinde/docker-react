@@ -7,3 +7,11 @@ before_install:
 
 script:
   - docker run jatindocker4/docker-react npm run test -- --coverage
+
+  deploy:
+    provider: heroku
+    api_key:
+      secure: e332a182-6158-409f-9eae-42ee8b3cc123
+    app: docker-react
+    on:
+      repo: jatinde/docker-react
