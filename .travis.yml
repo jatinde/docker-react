@@ -11,7 +11,7 @@ script:
   deploy:
     provider: heroku
     api_key:
-      secure: e332a182-6158-409f-9eae-42ee8b3cc123
+      secure: <>
     app: docker-react
     on:
       repo: jatinde/docker-react
